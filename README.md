@@ -2,7 +2,41 @@
 
 A mobile application that helps healthcare professionals treat perinatal patients with ease. PEACE for Moms is a service that connects Georgia healthcare professionals with pyschiatrics who specialize in perinatal mental health. This a project in collaboration with Emory University School of Medicine, and our client for this project is Dr. Rebecca Woo. Learn more about this service on their website: https://www.peace4momsga.org/
 
+## Installation Guide
+#### Prerequisites
+To simulate the app, you must have Expo Go installed: https://docs.expo.dev/get-started/installation/
+For Mac:
+- Install Homebrew: https://brew.sh/
+- Using Homebrew, install yarn (our package manager): https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable
+For Windows:
+- Install node: https://nodejs.org/en
+- Install yarn (our package manager): https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable
+
+#### Download Instructions
+- In your terminal, run `git clone https://github.gatech.edu/JAADES/p4m.git`
+
+#### Run Instructions
+- In the terminal, run `yarn install`. This only needs to be done when you first clone the repository.
+- To run the application on your simulator, use `yarn run` in the terminal, and when the build is complete, choose the command for your operating system. The simulator should start. 
+- To run the application on your mobile device, make sure you have the Expo Go app installed on your device. Use `yarn run` in the terminal, and a QR code should be generated. Scan the QR code on your mobile device, and the link should redirect you to the Expo Go application. 
+
 ## Release Notes
+
+### Release v1.0.0
+
+#### Features
+- Users can jump directly to the resources of the screening tool from the screening type selection screen instead of having to fill out the entire questionnaire.
+- Profile page now displays user email and name
+
+#### Bug Fixes
+- Cleaned up user interface and source code.
+#### Known Issues
+- No actual verification for if the user registering is a licensed prescriber in the state of Georgia. 
+- Red Cap integration was requested from the client, but was unable to be implemented from our group.
+- Contact page does not send email within the application, but instead redirects user to mail application with the sender prefilled.
+- The user information should be sent with the email (i.e. the name and email) instead of the user having to fill in the name and email fields.
+- Interface is inconsistent on larger screens (i.e. iPads).
+
 
 ### Release v0.4.0
 
@@ -84,20 +118,3 @@ A mobile application that helps healthcare professionals treat perinatal patient
 - No navigation after user is correctly logged in
 - No functionality for recover account
 
-## Project Set Up:
-
-For Mac:
-
-Official documentation: https://reactnative.dev/docs/environment-setup
-
-- Note: not everything on the documentation is necessary. Other team members primarily use yarn and npm for this project
-
-Install Homebrew: https://brew.sh/
-
-Install Expo Go: https://docs.expo.dev/get-started/installation/
-
-Install XCode: https://apps.apple.com/us/app/xcode/id497799835?mt=12 (links to app store)
-
-Install yarn: https://classic.yarnpkg.com/en/docs/install#mac-stable
-
-App should run with yarn install, then yarn start
